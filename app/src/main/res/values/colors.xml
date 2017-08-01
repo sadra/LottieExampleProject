@@ -5,5 +5,10 @@
     <color name="colorAccent">#FF4081</color>
 
 
+    <color name="borderlessButtonColor">#0084f7</color>
+    <color name="borderlessButtonColorGreen">#17bc01</color>
+    <color name="borderlessButtonColorRed">#f70025</color>
+    <color name="borderlessButtonColorOrange">#f75b00</color>
+    <color name="borderlessButtonColorPurple">#9000f7</color>
     <color name="buttonBackgroundTint">#efefef</color>
 </resources>

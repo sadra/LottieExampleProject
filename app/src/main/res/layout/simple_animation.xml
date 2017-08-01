@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/simpleAnimation_lottieView"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginBottom="8dp"
+        android:id="@+id/simpleAnimation_btn_pauseAndResume"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/borderlessButtonColorOrange"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="@string/btn_animation_pause"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"/>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/simpleAnimation_btn_slower"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/borderlessButtonColor"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="@string/btn_animation_slower"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/simpleAnimation_txt_animationSpeed"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:gravity="center"
+            android:text="Speed 1.0X"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/simpleAnimation_btn_faster"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/borderlessButtonColor"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="@string/btn_animation_faster"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="8dp"
+        android:id="@+id/simpleAnimation_btn_changeBoxColor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/borderlessButtonColorPurple"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:text="@string/btn_animation_changeBoxColor"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"/>
+
+
+
+
+
+</LinearLayout>

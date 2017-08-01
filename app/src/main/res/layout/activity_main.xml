@@ -23,16 +23,18 @@
         android:textAllCaps="false"
         android:text="@string/btn_simple_animation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
 
 
     <android.support.v7.widget.AppCompatButton
-        android:id="@+id/btn_progressbar_animation"
+        android:id="@+id/btn_progress_animation"
         android:backgroundTint="@color/buttonBackgroundTint"
         android:textAllCaps="false"
-        android:text="@string/btn_progressbar_animation"
+        android:text="@string/btn_progress_animation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
 
 
     <android.support.v7.widget.AppCompatButton
@@ -41,7 +43,8 @@
         android:textAllCaps="false"
         android:text="@string/btn_interaction_animation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="5dp"/>
 
 
 

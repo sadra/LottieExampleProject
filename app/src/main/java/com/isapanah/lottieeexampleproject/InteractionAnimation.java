@@ -1,11 +1,15 @@
 package com.isapanah.lottieeexampleproject;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+/**
+ * Created by sadra on 8/1/17.
+ */
+
+public class InteractionAnimation  extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
@@ -22,23 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        Intent intent;
-
         switch (v.getId()) {
             case R.id.btn_simple_animation:
-                intent = new Intent(MainActivity.this, SimpleAnimation.class);
-                break;
-            case R.id.btn_progress_animation:
-                intent = new Intent(MainActivity.this, ProgressAnimation.class);
-                break;
-            case R.id.btn_interaction_animation:
-                intent = new Intent(MainActivity.this, SimpleAnimation.class);
                 break;
             default:
-                intent = new Intent(MainActivity.this, SimpleAnimation.class);
         }
-
-        startActivity(intent);
 
     }
 }
