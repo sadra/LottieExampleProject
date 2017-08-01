@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center|top"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isapanah.lottieeexampleproject.MainActivity"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/select_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_simple_animation"
+        android:backgroundTint="@color/buttonBackgroundTint"
+        android:textAllCaps="false"
+        android:text="@string/btn_simple_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_progressbar_animation"
+        android:backgroundTint="@color/buttonBackgroundTint"
+        android:textAllCaps="false"
+        android:text="@string/btn_progressbar_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_interaction_animation"
+        android:backgroundTint="@color/buttonBackgroundTint"
+        android:textAllCaps="false"
+        android:text="@string/btn_interaction_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</LinearLayout>

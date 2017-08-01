@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lottie Example Project</string>
+
+
+    <string name="select_example">Choose one of example</string>
+
+    // Buttons Title
+    <string name="btn_simple_animation">Simple Animation</string>
+    <string name="btn_progressbar_animation">Animation with ProgressBar</string>
+    <string name="btn_interaction_animation">Interaction with user</string>
+
+
+</resources>
