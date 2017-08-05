@@ -35,10 +35,8 @@ public class ProgressAnimation  extends AppCompatActivity{
         lottieView = (LottieAnimationView) findViewById(R.id.progressAnimation_lottieView);
         lottieView.setAnimation("starwars.json");
 
-
         seekBar = (SeekBar) findViewById(R.id.progressAnimation_seekBar);
         progressPercent = (TextView) findViewById(R.id.progressAnimation_txt_progressPercent);
-
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -57,7 +55,6 @@ public class ProgressAnimation  extends AppCompatActivity{
 
             }
         });
-
 
     }
 

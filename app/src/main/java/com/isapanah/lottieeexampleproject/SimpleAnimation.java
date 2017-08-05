@@ -38,9 +38,6 @@ public class SimpleAnimation  extends AppCompatActivity implements View.OnClickL
         lottieView.playAnimation();
 
 
-
-
-
         findViewById(R.id.simpleAnimation_btn_pauseAndResume).setOnClickListener(this);
         findViewById(R.id.simpleAnimation_btn_faster).setOnClickListener(this);
         findViewById(R.id.simpleAnimation_btn_slower).setOnClickListener(this);

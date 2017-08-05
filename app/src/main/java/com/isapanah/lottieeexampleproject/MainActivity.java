@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_simple_animation).setOnClickListener(this);
         findViewById(R.id.btn_progress_animation).setOnClickListener(this);
         findViewById(R.id.btn_interaction_animation).setOnClickListener(this);
+        findViewById(R.id.btn_animated_font).setOnClickListener(this);
 
     }
 
@@ -32,7 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this, ProgressAnimation.class);
                 break;
             case R.id.btn_interaction_animation:
-                intent = new Intent(MainActivity.this, SimpleAnimation.class);
+                intent = new Intent(MainActivity.this, InteractionAnimation.class);
+                break;
+            case R.id.btn_animated_font:
+                intent = new Intent(MainActivity.this, AnimatedFont.class);
                 break;
             default:
                 intent = new Intent(MainActivity.this, SimpleAnimation.class);
