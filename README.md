@@ -1,4 +1,4 @@
-# LottieExampleProject
+# Lottie Example Project for Android
 This is an example project for using Lottie in Android applications
 
 ## Refrence Library
