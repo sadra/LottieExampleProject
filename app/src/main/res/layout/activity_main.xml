@@ -70,6 +70,24 @@
             android:layout_height="wrap_content"
             android:padding="5dp"/>
 
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_app_intro"
+            android:backgroundTint="@color/buttonBackgroundTint"
+            android:textAllCaps="false"
+            android:text="@string/btn_app_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:lottie_fileName="shrug.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
 
     </LinearLayout>
 

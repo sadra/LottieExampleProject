@@ -9,6 +9,7 @@
     <string name="btn_progress_animation">Animation with Progress</string>
     <string name="btn_interaction_animation">Interaction with user</string>
     <string name="btn_animated_font">Animated Font</string>
+    <string name="btn_app_intro">Application Intro</string>
 
     <string name="btn_animation_pause">Pause</string>
     <string name="btn_animation_resume">Resume</string>

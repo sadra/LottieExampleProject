@@ -53,6 +53,14 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <activity
+            android:label="@string/app_name"
+            android:name=".AppIntroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
     </application>
 
 </manifest>

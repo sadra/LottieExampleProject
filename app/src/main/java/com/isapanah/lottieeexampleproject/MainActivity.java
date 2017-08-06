@@ -7,7 +7,6 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_progress_animation).setOnClickListener(this);
         findViewById(R.id.btn_interaction_animation).setOnClickListener(this);
         findViewById(R.id.btn_animated_font).setOnClickListener(this);
+        findViewById(R.id.btn_app_intro).setOnClickListener(this);
 
     }
 
@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_animated_font:
                 intent = new Intent(MainActivity.this, AnimatedFont.class);
+                break;
+            case R.id.btn_app_intro:
+                intent = new Intent(MainActivity.this, AppIntroActivity.class);
                 break;
             default:
                 intent = new Intent(MainActivity.this, SimpleAnimation.class);

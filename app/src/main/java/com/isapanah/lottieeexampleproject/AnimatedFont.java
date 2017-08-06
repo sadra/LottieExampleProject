@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import com.isapanah.lottieeexampleproject.R;
 
-class AnimatedFont extends AppCompatActivity {
+public class AnimatedFont extends AppCompatActivity {
 
     LottieFontViewGroup fontView;
 
