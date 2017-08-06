@@ -30,13 +30,10 @@ public class SimpleAnimation  extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.simple_animation);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         lottieView = (LottieAnimationView) findViewById(R.id.simpleAnimation_lottieView);
         lottieView.setAnimation("gift.json");
         lottieView.loop(true);
         lottieView.playAnimation();
-
 
         findViewById(R.id.simpleAnimation_btn_pauseAndResume).setOnClickListener(this);
         findViewById(R.id.simpleAnimation_btn_faster).setOnClickListener(this);
@@ -106,17 +103,6 @@ public class SimpleAnimation  extends AppCompatActivity implements View.OnClickL
             lottieView.clearColorFilters();
             isBoxColorChanged = false;
             changeBoxColor.setText(R.string.btn_animation_changeBoxColor);
-        }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
         }
     }
 

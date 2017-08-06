@@ -30,7 +30,6 @@ public class InteractionAnimation  extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.interaction_animation);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         findViewById(R.id.animatedRadioButtonContainer).setOnClickListener(this);
         findViewById(R.id.animatedSwitchButtonContainer).setOnClickListener(this);
@@ -64,18 +63,6 @@ public class InteractionAnimation  extends AppCompatActivity implements View.OnC
             }
         });
 
-
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
     @Override
