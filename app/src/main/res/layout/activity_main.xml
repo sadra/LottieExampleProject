@@ -1,54 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:gravity="center|top"
+<RelativeLayout android:gravity="center|top"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.isapanah.lottieeexampleproject.MainActivity"
-    android:padding="16dp"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:text="@string/select_example"
+    <com.airbnb.lottie.LottieAnimationView
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="gradient_background.json"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"/>
+        android:layout_height="match_parent" />
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/btn_simple_animation"
-        android:backgroundTint="@color/buttonBackgroundTint"
-        android:textAllCaps="false"
-        android:text="@string/btn_simple_animation"
+    <LinearLayout
+        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/btn_progress_animation"
-        android:backgroundTint="@color/buttonBackgroundTint"
-        android:textAllCaps="false"
-        android:text="@string/btn_progress_animation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp" />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/select_example"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_simple_animation"
+            android:backgroundTint="@color/buttonBackgroundTint"
+            android:textAllCaps="false"
+            android:text="@string/btn_simple_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
 
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/btn_interaction_animation"
-        android:backgroundTint="@color/buttonBackgroundTint"
-        android:textAllCaps="false"
-        android:text="@string/btn_interaction_animation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_progress_animation"
+            android:backgroundTint="@color/buttonBackgroundTint"
+            android:textAllCaps="false"
+            android:text="@string/btn_progress_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
 
 
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_interaction_animation"
+            android:backgroundTint="@color/buttonBackgroundTint"
+            android:textAllCaps="false"
+            android:text="@string/btn_interaction_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_animated_font"
+            android:backgroundTint="@color/buttonBackgroundTint"
+            android:textAllCaps="false"
+            android:text="@string/btn_animated_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_app_intro"
+            android:backgroundTint="@color/buttonBackgroundTint"
+            android:textAllCaps="false"
+            android:text="@string/btn_app_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:lottie_fileName="shrug.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 
+    </LinearLayout>
 
-
-</LinearLayout>
+</RelativeLayout>

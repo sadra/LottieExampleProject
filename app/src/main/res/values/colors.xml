@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="introBackgroundColor">#43A047</color>
 
     <color name="borderlessButtonColor">#0084f7</color>
     <color name="borderlessButtonColorGreen">#17bc01</color>

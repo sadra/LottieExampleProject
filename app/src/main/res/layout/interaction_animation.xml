@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:text="If you need use intractable animation, this is good exercise."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/animatedRadioButtonContainer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_fileName="radio_button.json"
+            android:id="@+id/animatedRadioButton"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_width="60dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:text="Radio Button Animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/animatedSwitchButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_fileName="switch.json"
+            android:id="@+id/animatedSwitchButton"
+            android:layout_width="60dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:text="Switch Button Animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/animatedHamburgerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animatedHamburger"
+            app:lottie_fileName="hamburger.json"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_width="60dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:text="Hamburger Button Animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/animatedMuteContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animatedMute"
+            app:lottie_fileName="mute.json"
+            android:scaleType="fitXY"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_width="60dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:text="Mute Button Animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_fileName="whale.json"
+            android:scaleType="fitXY"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:padding="16dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
