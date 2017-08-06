@@ -54,44 +54,59 @@ public class SimpleAnimation  extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
 
             case R.id.simpleAnimation_btn_pauseAndResume:
-                if (!lottieView.isAnimating()){
-                    lottieView.resumeAnimation();
-                    PauseResumeBtn.setText(R.string.btn_animation_pause);
-                } else{
-                    lottieView.pauseAnimation();
-                    PauseResumeBtn.setText(R.string.btn_animation_resume);
-                }
+                resumeAnimation();
                 break;
 
             case R.id.simpleAnimation_btn_faster:
-                animationSpeed *= 2;
-                lottieView.setSpeed(animationSpeed);
-                animationSpeedLabel.setText("Speed " + animationSpeed + "X");
+                reduceSpeed();
                 break;
 
             case R.id.simpleAnimation_btn_slower:
-                animationSpeed /= 2;
-                lottieView.setSpeed(animationSpeed);
-                animationSpeedLabel.setText("Speed " + animationSpeed + "X");
+                increaseSpeed();
                 break;
 
             case R.id.simpleAnimation_btn_changeBoxColor:
-                if(!isBoxColorChanged){
-                    final PorterDuffColorFilter colorFilter1 = new PorterDuffColorFilter(Color.parseColor("#CC0321"), PorterDuff.Mode.SRC);
-                    final PorterDuffColorFilter colorFilter2 = new PorterDuffColorFilter(Color.RED, PorterDuff.Mode.SRC);
-                    lottieView.addColorFilterToLayer("body Konturen", colorFilter1);
-                    lottieView.addColorFilterToLayer("top Konturen", colorFilter2);
-                    isBoxColorChanged = true;
-                    changeBoxColor.setText(R.string.btn_animation_clearBoxColor);
-                }else{
-                    lottieView.clearColorFilters();
-                    isBoxColorChanged = false;
-                    changeBoxColor.setText(R.string.btn_animation_changeBoxColor);
-                    changeBoxColor.setVisibility(View.GONE);
-                }
+                changeColor();
                 break;
         }
 
+    }
+
+    private void resumeAnimation(){
+        if (!lottieView.isAnimating()){
+            lottieView.resumeAnimation();
+            PauseResumeBtn.setText(R.string.btn_animation_pause);
+        } else{
+            lottieView.pauseAnimation();
+            PauseResumeBtn.setText(R.string.btn_animation_resume);
+        }
+    }
+
+    private void reduceSpeed(){
+        animationSpeed *= 2;
+        lottieView.setSpeed(animationSpeed);
+        animationSpeedLabel.setText("Speed " + animationSpeed + "X");
+    }
+
+    private void increaseSpeed(){
+        animationSpeed /= 2;
+        lottieView.setSpeed(animationSpeed);
+        animationSpeedLabel.setText("Speed " + animationSpeed + "X");
+    }
+
+    private void changeColor(){
+        if(!isBoxColorChanged){
+            final PorterDuffColorFilter colorFilter1 = new PorterDuffColorFilter(Color.parseColor("#CC0321"), PorterDuff.Mode.SRC);
+            final PorterDuffColorFilter colorFilter2 = new PorterDuffColorFilter(Color.RED, PorterDuff.Mode.SRC);
+            lottieView.addColorFilterToLayer("body Konturen", colorFilter1);
+            lottieView.addColorFilterToLayer("top Konturen", colorFilter2);
+            isBoxColorChanged = true;
+            changeBoxColor.setText(R.string.btn_animation_clearBoxColor);
+        }else{
+            lottieView.clearColorFilters();
+            isBoxColorChanged = false;
+            changeBoxColor.setText(R.string.btn_animation_changeBoxColor);
+        }
     }
 
     @Override
