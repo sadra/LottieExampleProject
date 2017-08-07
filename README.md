@@ -6,4 +6,4 @@ This is an example project for using Lottie in Android applications
 ) animations exported as json with [Bodymovin](https://github.com/bodymovin/bodymovin) and renders them natively on mobile!
 
 ## Demo
-[![Lottie Example Project Demo](https://github.com/sadra/LottieExampleProject/blob/master/art/oh-my-lottie.gif)](http://www.aparat.com/v/ZTLHP)
+[![Lottie Example Project Demo](https://github.com/sadra/LottieExampleProject/blob/master/repo/art/oh-my-lottie.gif)](http://www.aparat.com/v/ZTLHP)
