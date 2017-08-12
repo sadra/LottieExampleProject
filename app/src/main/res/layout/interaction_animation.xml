@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -118,24 +120,13 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="horizontal"
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/animatedWatch"
+        app:lottie_fileName="watch.json"
+        app:lottie_loop="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.airbnb.lottie.LottieAnimationView
-            app:lottie_fileName="whale.json"
-            android:scaleType="fitXY"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
-            android:padding="16dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
+        android:layout_height="match_parent" />
 
 </LinearLayout>

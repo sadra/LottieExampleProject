@@ -27,8 +27,6 @@
         android:layout_height="wrap_content"
         android:padding="5dp"/>
 
-
-
     <LinearLayout
         android:gravity="center"
         android:orientation="horizontal"
@@ -66,7 +64,6 @@
             android:padding="5dp"/>
 
     </LinearLayout>
-
 
     <android.support.v7.widget.AppCompatButton
         android:layout_marginTop="8dp"

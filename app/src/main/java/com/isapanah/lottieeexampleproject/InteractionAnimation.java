@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -23,7 +24,7 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class InteractionAnimation  extends AppCompatActivity implements View.OnClickListener {
 
-    LottieAnimationView animatedRadioButton, animatedSwitchButton, animatedHamburger, animatedMuteButton;
+    LottieAnimationView animatedRadioButton, animatedSwitchButton, animatedHamburger, animatedMuteButton, animatedWatch;
     boolean hamburgerIsOpen = false, switchIsOn = false, isMute = false;
 
     @Override
@@ -35,11 +36,13 @@ public class InteractionAnimation  extends AppCompatActivity implements View.OnC
         findViewById(R.id.animatedSwitchButtonContainer).setOnClickListener(this);
         findViewById(R.id.animatedMuteContainer).setOnClickListener(this);
         findViewById(R.id.animatedHamburgerContainer).setOnClickListener(this);
+        findViewById(R.id.animatedWatch).setOnClickListener(this);
 
         animatedRadioButton = (LottieAnimationView) findViewById(R.id.animatedRadioButton);
         animatedSwitchButton = (LottieAnimationView) findViewById(R.id.animatedSwitchButton);
         animatedHamburger = (LottieAnimationView) findViewById(R.id.animatedHamburger);
         animatedMuteButton = (LottieAnimationView) findViewById(R.id.animatedMute);
+        animatedWatch = (LottieAnimationView) findViewById(R.id.animatedWatch);
 
         animatedMuteButton.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
@@ -63,6 +66,25 @@ public class InteractionAnimation  extends AppCompatActivity implements View.OnC
             }
         });
 
+
+        animatedWatch.addAnimatorUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                if((Float)animation.getAnimatedValue() < 0.25f){
+                    animatedWatch.addColorFilter( new PorterDuffColorFilter(Color.RED, PorterDuff.Mode.SRC) );
+                }else if((Float)animation.getAnimatedValue() > 0.2 && (Float)animation.getAnimatedValue() < 0.5){
+                    animatedWatch.addColorFilter( new PorterDuffColorFilter(Color.MAGENTA, PorterDuff.Mode.SRC) );
+                }else if((Float)animation.getAnimatedValue() > 0.5 && (Float)animation.getAnimatedValue() < 0.75){
+                    animatedWatch.addColorFilter( new PorterDuffColorFilter(Color.CYAN, PorterDuff.Mode.SRC) );
+                }else{
+                    animatedWatch.addColorFilter( new PorterDuffColorFilter(Color.BLUE, PorterDuff.Mode.SRC) );
+                }
+                if( (Float)animation.getAnimatedValue() == 0.93f ){
+                    Snackbar.make(findViewById(R.id.container),  "Oh My Lottie, your time is finished!", Snackbar.LENGTH_LONG).show();
+                }
+            }
+        });
+
     }
 
     @Override
@@ -80,6 +102,9 @@ public class InteractionAnimation  extends AppCompatActivity implements View.OnC
                 break;
             case R.id.animatedMuteContainer:
                 selectMuteButton();
+                break;
+            case R.id.animatedWatch:
+                clickedOnWatch();
                 break;
             default:
         }
@@ -132,6 +157,10 @@ public class InteractionAnimation  extends AppCompatActivity implements View.OnC
             isMute = false;
         }
 
+    }
+
+    private void clickedOnWatch(){
+        animatedWatch.playAnimation();
     }
 
 }

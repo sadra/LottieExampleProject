@@ -95,6 +95,7 @@ public class SimpleAnimation  extends AppCompatActivity implements View.OnClickL
         if(!isBoxColorChanged){
             final PorterDuffColorFilter colorFilter1 = new PorterDuffColorFilter(Color.parseColor("#CC0321"), PorterDuff.Mode.SRC);
             final PorterDuffColorFilter colorFilter2 = new PorterDuffColorFilter(Color.RED, PorterDuff.Mode.SRC);
+            lottieView.addColorFilter(colorFilter1);
             lottieView.addColorFilterToLayer("body Konturen", colorFilter1);
             lottieView.addColorFilterToLayer("top Konturen", colorFilter2);
             isBoxColorChanged = true;
