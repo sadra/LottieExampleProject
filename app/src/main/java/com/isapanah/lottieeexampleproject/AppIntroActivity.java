@@ -24,6 +24,7 @@ import com.matthewtamlin.sliding_intro_screen_library.core.LockableViewPager;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class AppIntroActivity extends IntroActivity {
 
@@ -44,13 +45,11 @@ public class AppIntroActivity extends IntroActivity {
     @Override
     protected Collection<? extends Fragment> generatePages(Bundle savedInstanceState) {
         return new ArrayList<EmptyFragment>() {{
-            add(EmptyFragment.newInstance());
-            add(EmptyFragment.newInstance());
-            add(EmptyFragment.newInstance());
-            add(EmptyFragment.newInstance());
-            add(EmptyFragment.newInstance());
-            add(EmptyFragment.newInstance());
-            add(EmptyFragment.newInstance());
+            int pages = 7;
+            while (pages > 0){
+                add(EmptyFragment.newInstance());
+                pages--;
+            }
         }};
     }
 
